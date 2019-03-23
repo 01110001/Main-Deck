@@ -5,8 +5,7 @@
 
 int main() 
 {
-	int i,tmp;
-	int max=0,k=0,key=0,arr[100000];
+	int i, tmp, max=0, k=0, key=0, arr[100000];
 	
 	srand(time(NULL));
 	
@@ -44,5 +43,6 @@ int main()
     for(i=0;i<100000;i++)
     	printf("%d ",arr[i]);
     return 0;
+	
 }
 
