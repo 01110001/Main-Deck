@@ -6,10 +6,10 @@
 int main() 
 {
 	int i, tmp, max=0, k=0, key=0, arr[100000];
-	
+
 	srand(time(NULL));
-	
-	
+
+
 	for(i=0;i<100000;i++)
 		arr[i]=rand()%100;
 		
@@ -40,8 +40,10 @@ int main()
 			}
 		}
         }
-    for(i=0;i<100000;i++)
-    	printf("%d ",arr[i]);
+    
+	for(i=0;i<100000;i++)
+    		printf("%d ",arr[i]);
+	
     return 0;
 	
 }
