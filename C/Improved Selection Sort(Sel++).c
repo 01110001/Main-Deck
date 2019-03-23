@@ -38,8 +38,8 @@ int main()
         		i=max-1;
         		k=0;
         		key=0;
-				}
 			}
+		}
         }
     for(i=0;i<100000;i++)
     	printf("%d ",arr[i]);
