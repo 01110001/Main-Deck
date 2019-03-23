@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <time.h>
+
+int main() 
+{
+	int i,tmp;
+	int max=0,k=0,key=0,arr[100000];
+	
+	srand(time(NULL));
+	
+	
+	for(i=0;i<100000;i++)
+		arr[i]=rand()%100;
+		
+		
+    for(i=0;i<100000-1;i++)
+        {
+        if((arr[i+1])<(arr[i]))
+            {
+            key=1;
+            if(i>max)
+            	max=i;
+            tmp=arr[i+1];
+            arr[i+1]=arr[i];
+            arr[i]=tmp;
+            if(i>=1)
+            	i-=2;
+            else
+            	i=0;
+            }
+        else
+        	{
+        	k++;
+        	if((k>1)&&(key))
+        		{
+        		i=max-1;
+        		k=0;
+        		key=0;
+				}
+			}
+        }
+    for(i=0;i<100000;i++)
+    	printf("%d ",arr[i]);
+    return 0;
+}
+
