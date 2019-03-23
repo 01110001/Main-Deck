@@ -12,7 +12,7 @@ int main()
 
 	for(i=0;i<100000;i++)
 		arr[i]=rand()%100;
-		
+	
 		
     for(i=0;i<100000-1;i++)
         {
