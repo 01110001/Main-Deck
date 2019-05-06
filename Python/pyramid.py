@@ -16,11 +16,12 @@ def findMax(listt, lines, currentLn, currentTotal, currentIndex):
 
     if currentLn == lines:
         if isNotPrime(listt[currentIndex]):
-            if (currentTotal + listt[currentIndex])>maxx:
-                maxx = currentTotal +listt[currentIndex]
-        if currentTotal>maxx:
+            if (currentTotal + listt[currentIndex]) > maxx:
+                maxx = currentTotal + listt[currentIndex]
+        else: 
+            if currentTotal > maxx:
                 maxx = currentTotal
-        return maxx
+        return 0
     else:
         if isNotPrime(listt[currentIndex]):
             currentTotal += listt[currentIndex]
@@ -28,17 +29,18 @@ def findMax(listt, lines, currentLn, currentTotal, currentIndex):
             findMax(listt, lines, currentLn + 1, currentTotal, currentIndex + currentLn + 1)
             findMax(listt, lines, currentLn + 1, currentTotal, currentIndex + currentLn + 2)
         else:
-            if currentTotal>maxx:
+            if currentTotal > maxx:
                 maxx = currentTotal
-            return maxx
+            return 0
 
         
         
-    
+
 listt=[]
-maxx=0
-
+maxx= float('-inf')
+#print(maxx)
 numLines = sum(1 for line in open('myFile.txt'))
+
 
 with open("myFile.txt", "r+") as file:
     data = file.readlines() 
@@ -46,10 +48,8 @@ with open("myFile.txt", "r+") as file:
         listt += line.strip().split(" ") 
     
 listt= list(map(int, listt))
-
 #print (listt)
 
 
 findMax(listt, numLines-1, 0, 0, 0)
-
 print(maxx)
