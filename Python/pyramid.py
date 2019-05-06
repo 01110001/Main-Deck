@@ -1,12 +1,12 @@
-def isNotPrime (x):
-    if x<=2:
-        if x==1:
+def isNotPrime (number):
+    if number<=2:
+        if number==1:
             return True
         else:
             return False
     else:
-        for y in range(2,(x//3)+1):
-            if (x%y)==0:
+        for divider in range(2,(number//3)+1):
+            if (number%divider)==0:
                 return True
         return False
 
@@ -22,12 +22,14 @@ def findMax(listt, lines, currentLn, currentTotal, currentIndex):
             if currentTotal > maxx:
                 maxx = currentTotal
         return
+
     else:
         if isNotPrime(listt[currentIndex]):
             currentTotal += listt[currentIndex]
 
             findMax(listt, lines, currentLn + 1, currentTotal, currentIndex + currentLn + 1)
             findMax(listt, lines, currentLn + 1, currentTotal, currentIndex + currentLn + 2)
+
         else:
             if currentTotal > maxx:
                 maxx = currentTotal
@@ -38,17 +40,15 @@ def findMax(listt, lines, currentLn, currentTotal, currentIndex):
 
 listt=[]
 maxx= float('-inf')
-#print(maxx)
-numLines = sum(1 for line in open('myFile.txt'))
-
+numLines=0
 
 with open("myFile.txt", "r+") as file:
     data = file.readlines() 
     for line in data:
+        numLines+=1
         listt += line.strip().split(" ") 
     
 listt= list(map(int, listt))
-#print (listt)
 
 
 findMax(listt, numLines-1, 0, 0, 0)
