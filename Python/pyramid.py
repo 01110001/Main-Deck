@@ -21,7 +21,7 @@ def findMax(listt, lines, currentLn, currentTotal, currentIndex):
         else: 
             if currentTotal > maxx:
                 maxx = currentTotal
-        return 0
+        return
     else:
         if isNotPrime(listt[currentIndex]):
             currentTotal += listt[currentIndex]
@@ -31,7 +31,7 @@ def findMax(listt, lines, currentLn, currentTotal, currentIndex):
         else:
             if currentTotal > maxx:
                 maxx = currentTotal
-            return 0
+            return
 
         
         
