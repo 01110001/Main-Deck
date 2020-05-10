@@ -1,0 +1,98 @@
+# depslib dependency file v1.0
+1588362075 source:c:\users\bgmp\desktop\ \projects\c++\242_assignment\main.cpp
+	"Hospital.h"
+	<iostream>
+	<math.h>
+
+1588360655 source:c:\users\bgmp\desktop\ \projects\c++\242_assignment\src\employee.cpp
+	"Employee.h"
+	<stdlib.h>
+	<string.h>
+	<iostream>
+
+1588360656 c:\users\bgmp\desktop\ \projects\c++\242_assignment\include\employee.h
+	<iostream>
+
+1587759357 source:c:\users\bgmp\desktop\ \projects\c++\242_assignment\src\doctor.cpp
+	"Doctor.h"
+	<iostream>
+
+1588360706 c:\users\bgmp\desktop\ \projects\c++\242_assignment\include\doctor.h
+	"Employee.h"
+
+1587740317 source:c:\users\bgmp\desktop\ \projects\c++\242_assignment\src\nurse.cpp
+	"Nurse.h"
+
+1588360711 c:\users\bgmp\desktop\ \projects\c++\242_assignment\include\nurse.h
+	"Employee.h"
+
+1588360720 c:\users\bgmp\desktop\ \projects\c++\242_assignment\include\admin.h
+	"Employee.h"
+
+1587740310 source:c:\users\bgmp\desktop\ \projects\c++\242_assignment\src\admin.cpp
+	"Admin.h"
+
+1588360760 source:c:\users\bgmp\desktop\ \projects\c++\242_assignment\src\team.cpp
+	"Team.h"
+	<iostream>
+	<string.h>
+
+1588426371 c:\users\bgmp\desktop\ \projects\c++\242_assignment\include\team.h
+	"Nurse.h"
+	"Doctor.h"
+	"Admin.h"
+
+1588361972 source:c:\users\bgmp\desktop\ \projects\c++\242_assignment\src\hospital.cpp
+	"Hospital.h"
+
+1588360779 c:\users\bgmp\desktop\ \projects\c++\242_assignment\include\hospital.h
+	"Team.h"
+
+1588361101 source:c:\users\bgmp\desktop\242_assignment\main.cpp
+	"Hospital.h"
+	<iostream>
+
+1588360779 c:\users\bgmp\desktop\242_assignment\include\hospital.h
+	"Team.h"
+
+1588360730 c:\users\bgmp\desktop\242_assignment\include\team.h
+	"Nurse.h"
+	"Doctor.h"
+	"Admin.h"
+
+1588360711 c:\users\bgmp\desktop\242_assignment\include\nurse.h
+	"Employee.h"
+
+1588360656 c:\users\bgmp\desktop\242_assignment\include\employee.h
+	<iostream>
+
+1588360706 c:\users\bgmp\desktop\242_assignment\include\doctor.h
+	"Employee.h"
+
+1588360720 c:\users\bgmp\desktop\242_assignment\include\admin.h
+	"Employee.h"
+
+1587740310 source:c:\users\bgmp\desktop\242_assignment\src\admin.cpp
+	"Admin.h"
+
+1587759357 source:c:\users\bgmp\desktop\242_assignment\src\doctor.cpp
+	"Doctor.h"
+	<iostream>
+
+1588360655 source:c:\users\bgmp\desktop\242_assignment\src\employee.cpp
+	"Employee.h"
+	<stdlib.h>
+	<string.h>
+	<iostream>
+
+1588360778 source:c:\users\bgmp\desktop\242_assignment\src\hospital.cpp
+	"Hospital.h"
+
+1587740317 source:c:\users\bgmp\desktop\242_assignment\src\nurse.cpp
+	"Nurse.h"
+
+1588360760 source:c:\users\bgmp\desktop\242_assignment\src\team.cpp
+	"Team.h"
+	<iostream>
+	<string.h>
+
